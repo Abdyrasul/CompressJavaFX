@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="708.0" prefWidth="754.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="huffmancompress.Controller">
+   <children>
+      <JFXTextField fx:id="txtInput" labelFloat="true" layoutX="14.0" layoutY="24.0" prefHeight="31.0" prefWidth="649.0" promptText="Enter The Text" />
+      <JFXButton fx:id="btnCompress" layoutX="663.0" layoutY="24.0" text="Compress" textAlignment="CENTER" textFill="#3900c9" />
+      <JFXTextArea fx:id="txtAreaOrigin" layoutX="14.0" layoutY="100.0" prefHeight="114.0" prefWidth="727.0" />
+      <Label layoutX="14.0" layoutY="79.0" prefHeight="21.0" prefWidth="130.0" text="Original data" />
+      <Label fx:id="lblOrigin" layoutX="599.0" layoutY="69.0" prefHeight="21.0" prefWidth="57.0" text="Size: " />
+      <JFXTextArea fx:id="txtAreaCompressed" layoutX="14.0" layoutY="257.0" prefHeight="114.0" prefWidth="727.0" />
+      <Label layoutX="14.0" layoutY="236.0" prefHeight="21.0" prefWidth="130.0" text="Compressed data" />
+      <Label fx:id="lblCompressed" layoutX="599.0" layoutY="226.0" prefHeight="21.0" prefWidth="57.0" text="Size: " />
+      <JFXTextArea fx:id="txtAreaCodes" layoutX="18.0" layoutY="607.0" prefHeight="75.0" prefWidth="720.0" />
+      <Label layoutX="18.0" layoutY="569.0" prefHeight="21.0" prefWidth="122.0" text="Huffman Codes" />
+      <JFXButton fx:id="btnDecompress" layoutX="636.0" layoutY="381.0" text="Decompress" textAlignment="CENTER" textFill="#3900c9" />
+      <Label layoutX="12.0" layoutY="402.0" text="Decompressed Data" />
+      <JFXTextArea fx:id="txtAreaDecopressedData" layoutX="14.0" layoutY="436.0" prefHeight="114.0" prefWidth="714.0" />
+   </children>
+</AnchorPane>
