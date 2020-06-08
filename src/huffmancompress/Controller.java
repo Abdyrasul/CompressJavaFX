@@ -46,6 +46,7 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        //<editor-fold defaultstate="collapsed" desc="Action events of buttons">
         btnCompress.setOnAction(e->{
             String input = txtInput.getText();
             Huffman.buildHuffmanTree(input);
@@ -62,7 +63,7 @@ public class Controller implements Initializable {
                 txtAreaDecopressedData.setText(Huffman.origin.toString());
             }
         });
-        
+           //</editor-fold>
     }    
     
 }
